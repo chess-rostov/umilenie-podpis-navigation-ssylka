@@ -1,0 +1,1 @@
+# umilenie-podpis-navigation-ssylka
