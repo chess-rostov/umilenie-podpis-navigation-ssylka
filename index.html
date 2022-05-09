@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <meta charset="windows-1251">
+    <meta name="keywords" content="Икона Богородицы Умиление Серафимо-Дивеевская, Серафим Саровский, Дивеево, Умиление">
+    <title>Икона Богородицы Умиление Серафимо-Дивеевская</title>
+    <style>
+      body {
+        background: gray;
+        text-align: center; 
+      }
+
+      img {
+        max-width: auto;
+        height: 90%;
+      }
+      
+      img ~ div.vlevo{
+        width: 40%;
+        height: 100%;
+        background-color: green;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.3;
+        text-align: center;
+        /*vertical-align: middle;*/
+        z-index: 20;
+      }
+      
+      img ~ div.vpravo {
+        width: 40%;
+        height: 100%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.3;
+        text-align: center;
+        /*vertical-align: middle;*/
+        z-index: 30;
+        float: right;
+      }
+      
+      img ~ div.center {
+        width: 20%;
+        height: 100%;
+        background-color: yellow;
+        position: absolute;
+        top: 0;
+        left: 40%;
+        opacity: 0.3;
+        clear: both;
+      }
+      
+      #nameIcon {
+         font-size: xx-large;
+         display: block;
+      }
+    </style>
+    <script type="text/javascript">
+        function vlevoClick(){
+            console.log("vlevoClick();");
+            
+        }
+        
+        function vpravoClick(){
+            console.log("vpravoClick();");
+            
+        }
+        
+        function centerClick(){
+            console.log("centerClick();");
+            
+        }
+    </script>
+  </head>
+  <body>
+        <img src="https://azbyka.ru/days/storage/images/icons-of-our-lady/270/p1aolrao3nume1pn5svp1psl1pqq3.png">
+        <span id="nameIcon">умиление</span>
+        <div class="vlevo" onclick="vlevoClick();"></div>
+        <div class="center" onclick="centerClick();"></div>
+        <div class="vpravo" onclick="vpravoClick();"></div>
+  </body>
+</html>
